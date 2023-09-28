@@ -1,0 +1,7 @@
+---
+- name: This is a test project
+  hosts: localhost
+  tasks:
+  - name: Print my message
+    debug:
+     msg: "Hello this is a ansible test from AWX"
