@@ -1,0 +1,12 @@
+---
+- name: Install apache and configure the application
+  hosts: all
+  tasks:
+  - name: Enable the Apache Service
+    service:
+     name: httpd
+     enabled: yes
+     state: started
+  - name: Service Status
+    debug:
+     msg: "Apache service is enabled"

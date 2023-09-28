@@ -1,0 +1,11 @@
+---
+- name: Install apache and configure the application
+  hosts: all
+  tasks:
+  - name: Create the index file
+    copy:
+     content: "This is logesh webserver"
+     dest: /var/www/html/index.html
+  - name: Index file Status
+    debug:
+     msg: "Index file has been modified" 

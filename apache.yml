@@ -1,0 +1,11 @@
+---
+- name: Install apache and configure the application
+  hosts: all
+  tasks:
+  - name: Install Apache Package
+    yum:
+     name: httpd
+     state: present
+  - name: Installation Status
+    debug:
+     msg: "Installation is completed"
