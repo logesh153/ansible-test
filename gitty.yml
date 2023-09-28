@@ -2,6 +2,6 @@
 - name: Test Playbook
   hosts: all
   tasks:
-  - name: Print my message
+  - name: Print my messages
     debug:
      msg: "This is a message from github and executed through Ansible AWX"
